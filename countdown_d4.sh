@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# Bildschirm löschen
+clear
+
 # Definieren des Zielzeitpunkts
 target=$(date -j -f "%Y-%m-%d %H:%M:%S" "2023-06-06 00:00:00" "+%s")
-
-clear
 
 # Schleife für den Countdown
 while [ $(date +%s) -lt $target ]; do
@@ -21,5 +22,8 @@ while [ $(date +%s) -lt $target ]; do
     sleep 1
 done
 
+# Bildschirm löschen
+clear
+
 # Ausgabe der Fertigmeldung nach Ablauf des Countdowns
-echo -e "\nDiablo 4 wurde veröffentlicht!"
+echo -e "Diablo 4 wurde veröffentlicht!"
