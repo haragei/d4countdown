@@ -3,6 +3,8 @@
 # Definieren des Zielzeitpunkts
 target=$(date -j -f "%Y-%m-%d %H:%M:%S" "2023-06-06 00:00:00" "+%s")
 
+clear
+
 # Schleife für den Countdown
 while [ $(date +%s) -lt $target ]; do
     # Berechnung der verbleibenden Zeit
